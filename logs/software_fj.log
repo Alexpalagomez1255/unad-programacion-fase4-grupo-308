@@ -1,0 +1,836 @@
+2026-11-19 23:17:25,749 | INFO | software_fj | Entidad registrada | tipo=un cliente | codigo=CLI-001
+2026-11-19 23:17:25,749 | DEBUG | software_fj | Intento de registro finalizado | tipo=un cliente | total=1
+2026-11-19 23:17:25,749 | INFO | software_fj | Simulación válida aprobada | caso=Registrar cliente válido
+2026-11-19 23:17:25,750 | DEBUG | software_fj | Simulación finalizada | caso=Registrar cliente válido
+2026-11-19 23:17:25,750 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar cliente con correo inválido | error=ErrorValidacion
+2026-11-19 23:17:25,750 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar cliente con correo inválido
+2026-11-19 23:17:25,750 | WARNING | software_fj | Registro rechazado | tipo=un cliente | codigo=CLI-001
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 27, in _registrar
+    raise ErrorDuplicado(
+        f"Ya existe {tipo} con código {entidad.codigo}."
+    )
+software_fj.excepciones.ErrorDuplicado: Ya existe un cliente con código CLI-001.
+2026-11-19 23:17:25,750 | DEBUG | software_fj | Intento de registro finalizado | tipo=un cliente | total=1
+2026-11-19 23:17:25,751 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar cliente duplicado | error=ErrorDuplicado
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar cliente duplicado
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Validación numérica finalizada | campo=El máximo de horas
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por día
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Validación numérica finalizada | campo=El porcentaje de depósito
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Validación numérica finalizada | campo=El mínimo de horas
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Validación numérica finalizada | campo=El máximo de horas
+2026-11-19 23:17:25,751 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-SALA
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=1
+2026-11-19 23:17:25,751 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de sala
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de sala
+2026-11-19 23:17:25,751 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-EQP
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=2
+2026-11-19 23:17:25,751 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de alquiler de equipos
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de alquiler de equipos
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:17:25,751 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar servicio con tarifa negativa | error=ErrorValidacion
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar servicio con tarifa negativa
+2026-11-19 23:17:25,751 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-ASE
+2026-11-19 23:17:25,751 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=3
+2026-11-19 23:17:25,751 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de asesoría
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de asesoría
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,752 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-001
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=1
+2026-11-19 23:17:25,752 | INFO | software_fj | Reserva creada | reserva=RES-001 | total=288277.50
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-001 | total_reservas=1
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,752 | INFO | software_fj | Reserva confirmada | reserva=RES-001 | cliente=CLI-001 | total=288277.50
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-001 | estado=confirmada
+2026-11-19 23:17:25,752 | INFO | software_fj | Reserva procesada | reserva=RES-001
+2026-11-19 23:17:25,752 | INFO | software_fj | Simulación válida aprobada | caso=Completar reserva de sala
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Simulación finalizada | caso=Completar reserva de sala
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,752 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,753 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,753 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,753 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,753 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-002 | cliente=CLI-001 | servicio=SER-SALA
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 183, in calcular_costo
+    self.validar_parametros(duracion_decimal, **parametros)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 224, in validar_parametros
+    raise ErrorReservaInvalida(
+        f"La sala admite máximo {self.capacidad} participantes."
+    )
+software_fj.excepciones.ErrorReservaInvalida: La sala admite máximo 12 participantes.
+2026-11-19 23:17:25,754 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-002 | total_reservas=1
+2026-11-19 23:17:25,754 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar reserva que supera la capacidad de la sala | error=ErrorReservaInvalida
+2026-11-19 23:17:25,754 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar reserva que supera la capacidad de la sala
+2026-11-19 23:17:25,755 | INFO | software_fj | Disponibilidad modificada | servicio=SER-EQP | disponible=False
+2026-11-19 23:17:25,755 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,755 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,755 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,755 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-003 | cliente=CLI-001 | servicio=SER-EQP
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 175, in calcular_costo
+    raise ErrorServicioNoDisponible(
+        f"El servicio {self.codigo} no está disponible."
+    )
+software_fj.excepciones.ErrorServicioNoDisponible: El servicio SER-EQP no está disponible.
+2026-11-19 23:17:25,755 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-003 | total_reservas=1
+2026-11-19 23:17:25,755 | INFO | software_fj | Simulación inválida controlada | caso=Controlar servicio no disponible | error=ErrorServicioNoDisponible
+2026-11-19 23:17:25,755 | DEBUG | software_fj | Simulación finalizada | caso=Controlar servicio no disponible
+2026-11-19 23:17:25,755 | INFO | software_fj | Disponibilidad modificada | servicio=SER-EQP | disponible=True
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,756 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-004
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=2
+2026-11-19 23:17:25,756 | INFO | software_fj | Reserva creada | reserva=RES-004 | total=528000.00
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-004 | total_reservas=2
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,756 | INFO | software_fj | Reserva confirmada | reserva=RES-004 | cliente=CLI-001 | total=528000.00
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-004 | estado=confirmada
+2026-11-19 23:17:25,756 | INFO | software_fj | Reserva procesada | reserva=RES-004
+2026-11-19 23:17:25,756 | INFO | software_fj | Simulación válida aprobada | caso=Completar alquiler de equipos
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Simulación finalizada | caso=Completar alquiler de equipos
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,756 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,756 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-005 | cliente=CLI-001 | servicio=SER-EQP
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 183, in calcular_costo
+    self.validar_parametros(duracion_decimal, **parametros)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 264, in validar_parametros
+    raise ErrorReservaInvalida(
+        f"Solo hay {self.unidades_disponibles} unidades disponibles."
+    )
+software_fj.excepciones.ErrorReservaInvalida: Solo hay 5 unidades disponibles.
+2026-11-19 23:17:25,757 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-005 | total_reservas=2
+2026-11-19 23:17:25,757 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar alquiler por falta de unidades | error=ErrorReservaInvalida
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar alquiler por falta de unidades
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,758 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-006
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=3
+2026-11-19 23:17:25,758 | INFO | software_fj | Reserva creada | reserva=RES-006 | total=321300.00
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-006 | total_reservas=3
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,758 | INFO | software_fj | Reserva confirmada | reserva=RES-006 | cliente=CLI-001 | total=321300.00
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-006 | estado=confirmada
+2026-11-19 23:17:25,758 | INFO | software_fj | Reserva procesada | reserva=RES-006
+2026-11-19 23:17:25,758 | INFO | software_fj | Simulación válida aprobada | caso=Completar asesoría con descuento e impuesto
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Simulación finalizada | caso=Completar asesoría con descuento e impuesto
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:17:25,758 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:17:25,759 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-007
+2026-11-19 23:17:25,759 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=4
+2026-11-19 23:17:25,759 | INFO | software_fj | Reserva creada | reserva=RES-007 | total=150000.00
+2026-11-19 23:17:25,759 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-007 | total_reservas=4
+2026-11-19 23:17:25,759 | INFO | software_fj | Reserva cancelada | reserva=RES-007
+2026-11-19 23:17:25,759 | INFO | software_fj | Simulación válida aprobada | caso=Cancelar una reserva pendiente
+2026-11-19 23:17:25,759 | DEBUG | software_fj | Simulación finalizada | caso=Cancelar una reserva pendiente
+2026-11-19 23:17:25,759 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar procesamiento de una reserva cancelada | error=ErrorOperacionNoPermitida
+2026-11-19 23:17:25,759 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar procesamiento de una reserva cancelada
+2026-11-19 23:17:25,759 | INFO | software_fj | Evidencia guardada | ruta=/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/evidencias/resultados_simulaciones.json | aprobadas=15 | fallidas=0
+2026-11-19 23:22:17,201 | INFO | software_fj | Entidad registrada | tipo=un cliente | codigo=CLI-001
+2026-11-19 23:22:17,201 | DEBUG | software_fj | Intento de registro finalizado | tipo=un cliente | total=1
+2026-11-19 23:22:17,201 | INFO | software_fj | Simulación válida aprobada | caso=Registrar cliente válido
+2026-11-19 23:22:17,202 | DEBUG | software_fj | Simulación finalizada | caso=Registrar cliente válido
+2026-11-19 23:22:17,202 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar cliente con correo inválido | error=ErrorValidacion
+2026-11-19 23:22:17,202 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar cliente con correo inválido
+2026-11-19 23:22:17,202 | WARNING | software_fj | Registro rechazado | tipo=un cliente | codigo=CLI-001
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 27, in _registrar
+    raise ErrorDuplicado(
+        f"Ya existe {tipo} con código {entidad.codigo}."
+    )
+software_fj.excepciones.ErrorDuplicado: Ya existe un cliente con código CLI-001.
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Intento de registro finalizado | tipo=un cliente | total=1
+2026-11-19 23:22:17,203 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar cliente duplicado | error=ErrorDuplicado
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar cliente duplicado
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Validación numérica finalizada | campo=El máximo de horas
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por día
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Validación numérica finalizada | campo=El porcentaje de depósito
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Validación numérica finalizada | campo=El mínimo de horas
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Validación numérica finalizada | campo=El máximo de horas
+2026-11-19 23:22:17,203 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-SALA
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=1
+2026-11-19 23:22:17,203 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de sala
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de sala
+2026-11-19 23:22:17,203 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-EQP
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=2
+2026-11-19 23:22:17,203 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de alquiler de equipos
+2026-11-19 23:22:17,203 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de alquiler de equipos
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:22:17,204 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar servicio con tarifa negativa | error=ErrorValidacion
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar servicio con tarifa negativa
+2026-11-19 23:22:17,204 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-ASE
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=3
+2026-11-19 23:22:17,204 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de asesoría
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de asesoría
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,204 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-001
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=1
+2026-11-19 23:22:17,204 | INFO | software_fj | Reserva creada | reserva=RES-001 | total=288277.50
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-001 | total_reservas=1
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,204 | INFO | software_fj | Reserva confirmada | reserva=RES-001 | cliente=CLI-001 | total=288277.50
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-001 | estado=confirmada
+2026-11-19 23:22:17,204 | INFO | software_fj | Reserva procesada | reserva=RES-001
+2026-11-19 23:22:17,204 | INFO | software_fj | Simulación válida aprobada | caso=Completar reserva de sala
+2026-11-19 23:22:17,204 | DEBUG | software_fj | Simulación finalizada | caso=Completar reserva de sala
+2026-11-19 23:22:17,205 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,205 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,205 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,205 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,205 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,205 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,205 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-002 | cliente=CLI-001 | servicio=SER-SALA
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 183, in calcular_costo
+    self.validar_parametros(duracion_decimal, **parametros)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 224, in validar_parametros
+    raise ErrorReservaInvalida(
+        f"La sala admite máximo {self.capacidad} participantes."
+    )
+software_fj.excepciones.ErrorReservaInvalida: La sala admite máximo 12 participantes.
+2026-11-19 23:22:17,206 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-002 | total_reservas=1
+2026-11-19 23:22:17,206 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar reserva que supera la capacidad de la sala | error=ErrorReservaInvalida
+2026-11-19 23:22:17,206 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar reserva que supera la capacidad de la sala
+2026-11-19 23:22:17,206 | INFO | software_fj | Disponibilidad modificada | servicio=SER-EQP | disponible=False
+2026-11-19 23:22:17,206 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,206 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,206 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,206 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-003 | cliente=CLI-001 | servicio=SER-EQP
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 175, in calcular_costo
+    raise ErrorServicioNoDisponible(
+        f"El servicio {self.codigo} no está disponible."
+    )
+software_fj.excepciones.ErrorServicioNoDisponible: El servicio SER-EQP no está disponible.
+2026-11-19 23:22:17,207 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-003 | total_reservas=1
+2026-11-19 23:22:17,207 | INFO | software_fj | Simulación inválida controlada | caso=Controlar servicio no disponible | error=ErrorServicioNoDisponible
+2026-11-19 23:22:17,207 | DEBUG | software_fj | Simulación finalizada | caso=Controlar servicio no disponible
+2026-11-19 23:22:17,207 | INFO | software_fj | Disponibilidad modificada | servicio=SER-EQP | disponible=True
+2026-11-19 23:22:17,207 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,207 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,207 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,207 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,207 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,207 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,208 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-004
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=2
+2026-11-19 23:22:17,208 | INFO | software_fj | Reserva creada | reserva=RES-004 | total=528000.00
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-004 | total_reservas=2
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,208 | INFO | software_fj | Reserva confirmada | reserva=RES-004 | cliente=CLI-001 | total=528000.00
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-004 | estado=confirmada
+2026-11-19 23:22:17,208 | INFO | software_fj | Reserva procesada | reserva=RES-004
+2026-11-19 23:22:17,208 | INFO | software_fj | Simulación válida aprobada | caso=Completar alquiler de equipos
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Simulación finalizada | caso=Completar alquiler de equipos
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,208 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,208 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-005 | cliente=CLI-001 | servicio=SER-EQP
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 183, in calcular_costo
+    self.validar_parametros(duracion_decimal, **parametros)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 264, in validar_parametros
+    raise ErrorReservaInvalida(
+        f"Solo hay {self.unidades_disponibles} unidades disponibles."
+    )
+software_fj.excepciones.ErrorReservaInvalida: Solo hay 5 unidades disponibles.
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-005 | total_reservas=2
+2026-11-19 23:22:17,209 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar alquiler por falta de unidades | error=ErrorReservaInvalida
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar alquiler por falta de unidades
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,209 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-006
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=3
+2026-11-19 23:22:17,209 | INFO | software_fj | Reserva creada | reserva=RES-006 | total=321300.00
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-006 | total_reservas=3
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,209 | INFO | software_fj | Reserva confirmada | reserva=RES-006 | cliente=CLI-001 | total=321300.00
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-006 | estado=confirmada
+2026-11-19 23:22:17,209 | INFO | software_fj | Reserva procesada | reserva=RES-006
+2026-11-19 23:22:17,209 | INFO | software_fj | Simulación válida aprobada | caso=Completar asesoría con descuento e impuesto
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Simulación finalizada | caso=Completar asesoría con descuento e impuesto
+2026-11-19 23:22:17,209 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,210 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,210 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,210 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:22:17,210 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:22:17,210 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:22:17,210 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-007
+2026-11-19 23:22:17,210 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=4
+2026-11-19 23:22:17,210 | INFO | software_fj | Reserva creada | reserva=RES-007 | total=150000.00
+2026-11-19 23:22:17,210 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-007 | total_reservas=4
+2026-11-19 23:22:17,210 | INFO | software_fj | Reserva cancelada | reserva=RES-007
+2026-11-19 23:22:17,210 | INFO | software_fj | Simulación válida aprobada | caso=Cancelar una reserva pendiente
+2026-11-19 23:22:17,210 | DEBUG | software_fj | Simulación finalizada | caso=Cancelar una reserva pendiente
+2026-11-19 23:22:17,210 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar procesamiento de una reserva cancelada | error=ErrorOperacionNoPermitida
+2026-11-19 23:22:17,210 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar procesamiento de una reserva cancelada
+2026-11-19 23:22:17,210 | INFO | software_fj | Evidencia guardada | ruta=/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/evidencias/resultados_simulaciones.json | aprobadas=15 | fallidas=0
+2026-11-19 23:33:24,541 | INFO | software_fj | Entidad registrada | tipo=un cliente | codigo=CLI-001
+2026-11-19 23:33:24,541 | DEBUG | software_fj | Intento de registro finalizado | tipo=un cliente | total=1
+2026-11-19 23:33:24,541 | INFO | software_fj | Simulación válida aprobada | caso=Registrar cliente válido
+2026-11-19 23:33:24,541 | DEBUG | software_fj | Simulación finalizada | caso=Registrar cliente válido
+2026-11-19 23:33:24,541 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar cliente con correo inválido | error=ErrorValidacion
+2026-11-19 23:33:24,541 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar cliente con correo inválido
+2026-11-19 23:33:24,541 | WARNING | software_fj | Registro rechazado | tipo=un cliente | codigo=CLI-001
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 27, in _registrar
+    raise ErrorDuplicado(
+        f"Ya existe {tipo} con código {entidad.codigo}."
+    )
+software_fj.excepciones.ErrorDuplicado: Ya existe un cliente con código CLI-001.
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Intento de registro finalizado | tipo=un cliente | total=1
+2026-11-19 23:33:24,543 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar cliente duplicado | error=ErrorDuplicado
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar cliente duplicado
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Validación numérica finalizada | campo=El máximo de horas
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por día
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Validación numérica finalizada | campo=El porcentaje de depósito
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Validación numérica finalizada | campo=El mínimo de horas
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Validación numérica finalizada | campo=El máximo de horas
+2026-11-19 23:33:24,543 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-SALA
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=1
+2026-11-19 23:33:24,543 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de sala
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de sala
+2026-11-19 23:33:24,543 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-EQP
+2026-11-19 23:33:24,543 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=2
+2026-11-19 23:33:24,544 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de alquiler de equipos
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de alquiler de equipos
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:33:24,544 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar servicio con tarifa negativa | error=ErrorValidacion
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar servicio con tarifa negativa
+2026-11-19 23:33:24,544 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-ASE
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=3
+2026-11-19 23:33:24,544 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de asesoría
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de asesoría
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,544 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-001
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=1
+2026-11-19 23:33:24,544 | INFO | software_fj | Reserva creada | reserva=RES-001 | total=288277.50
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-001 | total_reservas=1
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,544 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,545 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,545 | INFO | software_fj | Reserva confirmada | reserva=RES-001 | cliente=CLI-001 | total=288277.50
+2026-11-19 23:33:24,545 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-001 | estado=confirmada
+2026-11-19 23:33:24,545 | INFO | software_fj | Reserva procesada | reserva=RES-001
+2026-11-19 23:33:24,545 | INFO | software_fj | Simulación válida aprobada | caso=Completar reserva de sala
+2026-11-19 23:33:24,545 | DEBUG | software_fj | Simulación finalizada | caso=Completar reserva de sala
+2026-11-19 23:33:24,545 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,545 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,545 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,545 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,545 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,545 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,545 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-002 | cliente=CLI-001 | servicio=SER-SALA
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 183, in calcular_costo
+    self.validar_parametros(duracion_decimal, **parametros)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 224, in validar_parametros
+    raise ErrorReservaInvalida(
+        f"La sala admite máximo {self.capacidad} participantes."
+    )
+software_fj.excepciones.ErrorReservaInvalida: La sala admite máximo 12 participantes.
+2026-11-19 23:33:24,547 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-002 | total_reservas=1
+2026-11-19 23:33:24,547 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar reserva que supera la capacidad de la sala | error=ErrorReservaInvalida
+2026-11-19 23:33:24,547 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar reserva que supera la capacidad de la sala
+2026-11-19 23:33:24,547 | INFO | software_fj | Disponibilidad modificada | servicio=SER-EQP | disponible=False
+2026-11-19 23:33:24,547 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,547 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,547 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,547 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-003 | cliente=CLI-001 | servicio=SER-EQP
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 175, in calcular_costo
+    raise ErrorServicioNoDisponible(
+        f"El servicio {self.codigo} no está disponible."
+    )
+software_fj.excepciones.ErrorServicioNoDisponible: El servicio SER-EQP no está disponible.
+2026-11-19 23:33:24,548 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-003 | total_reservas=1
+2026-11-19 23:33:24,548 | INFO | software_fj | Simulación inválida controlada | caso=Controlar servicio no disponible | error=ErrorServicioNoDisponible
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Simulación finalizada | caso=Controlar servicio no disponible
+2026-11-19 23:33:24,549 | INFO | software_fj | Disponibilidad modificada | servicio=SER-EQP | disponible=True
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,549 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-004
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=2
+2026-11-19 23:33:24,549 | INFO | software_fj | Reserva creada | reserva=RES-004 | total=528000.00
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-004 | total_reservas=2
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,549 | INFO | software_fj | Reserva confirmada | reserva=RES-004 | cliente=CLI-001 | total=528000.00
+2026-11-19 23:33:24,549 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-004 | estado=confirmada
+2026-11-19 23:33:24,549 | INFO | software_fj | Reserva procesada | reserva=RES-004
+2026-11-19 23:33:24,549 | INFO | software_fj | Simulación válida aprobada | caso=Completar alquiler de equipos
+2026-11-19 23:33:24,550 | DEBUG | software_fj | Simulación finalizada | caso=Completar alquiler de equipos
+2026-11-19 23:33:24,550 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,550 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,550 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,550 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,550 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,550 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,550 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-005 | cliente=CLI-001 | servicio=SER-EQP
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 183, in calcular_costo
+    self.validar_parametros(duracion_decimal, **parametros)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 264, in validar_parametros
+    raise ErrorReservaInvalida(
+        f"Solo hay {self.unidades_disponibles} unidades disponibles."
+    )
+software_fj.excepciones.ErrorReservaInvalida: Solo hay 5 unidades disponibles.
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-005 | total_reservas=2
+2026-11-19 23:33:24,551 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar alquiler por falta de unidades | error=ErrorReservaInvalida
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar alquiler por falta de unidades
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,551 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-006
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=3
+2026-11-19 23:33:24,551 | INFO | software_fj | Reserva creada | reserva=RES-006 | total=321300.00
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-006 | total_reservas=3
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,551 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,552 | INFO | software_fj | Reserva confirmada | reserva=RES-006 | cliente=CLI-001 | total=321300.00
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-006 | estado=confirmada
+2026-11-19 23:33:24,552 | INFO | software_fj | Reserva procesada | reserva=RES-006
+2026-11-19 23:33:24,552 | INFO | software_fj | Simulación válida aprobada | caso=Completar asesoría con descuento e impuesto
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Simulación finalizada | caso=Completar asesoría con descuento e impuesto
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:33:24,552 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-007
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=4
+2026-11-19 23:33:24,552 | INFO | software_fj | Reserva creada | reserva=RES-007 | total=150000.00
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-007 | total_reservas=4
+2026-11-19 23:33:24,552 | INFO | software_fj | Reserva cancelada | reserva=RES-007
+2026-11-19 23:33:24,552 | INFO | software_fj | Simulación válida aprobada | caso=Cancelar una reserva pendiente
+2026-11-19 23:33:24,552 | DEBUG | software_fj | Simulación finalizada | caso=Cancelar una reserva pendiente
+2026-11-19 23:33:24,552 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar procesamiento de una reserva cancelada | error=ErrorOperacionNoPermitida
+2026-11-19 23:33:24,553 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar procesamiento de una reserva cancelada
+2026-11-19 23:33:24,553 | INFO | software_fj | Evidencia guardada | ruta=/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/evidencias/resultados_simulaciones.json | aprobadas=15 | fallidas=0
+2026-11-19 23:36:54,789 | INFO | software_fj | Entidad registrada | tipo=un cliente | codigo=CLI-001
+2026-11-19 23:36:54,789 | DEBUG | software_fj | Intento de registro finalizado | tipo=un cliente | total=1
+2026-11-19 23:36:54,789 | INFO | software_fj | Simulación válida aprobada | caso=Registrar cliente válido
+2026-11-19 23:36:54,789 | DEBUG | software_fj | Simulación finalizada | caso=Registrar cliente válido
+2026-11-19 23:36:54,789 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar cliente con correo inválido | error=ErrorValidacion
+2026-11-19 23:36:54,789 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar cliente con correo inválido
+2026-11-19 23:36:54,790 | WARNING | software_fj | Registro rechazado | tipo=un cliente | codigo=CLI-001
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 27, in _registrar
+    raise ErrorDuplicado(
+        f"Ya existe {tipo} con código {entidad.codigo}."
+    )
+software_fj.excepciones.ErrorDuplicado: Ya existe un cliente con código CLI-001.
+2026-11-19 23:36:54,790 | DEBUG | software_fj | Intento de registro finalizado | tipo=un cliente | total=1
+2026-11-19 23:36:54,790 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar cliente duplicado | error=ErrorDuplicado
+2026-11-19 23:36:54,790 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar cliente duplicado
+2026-11-19 23:36:54,790 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Validación numérica finalizada | campo=El máximo de horas
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por día
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Validación numérica finalizada | campo=El porcentaje de depósito
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Validación numérica finalizada | campo=El mínimo de horas
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Validación numérica finalizada | campo=El máximo de horas
+2026-11-19 23:36:54,791 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-SALA
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=1
+2026-11-19 23:36:54,791 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de sala
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de sala
+2026-11-19 23:36:54,791 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-EQP
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=2
+2026-11-19 23:36:54,791 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de alquiler de equipos
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de alquiler de equipos
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Validación numérica finalizada | campo=El precio por hora
+2026-11-19 23:36:54,791 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar servicio con tarifa negativa | error=ErrorValidacion
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar servicio con tarifa negativa
+2026-11-19 23:36:54,791 | INFO | software_fj | Entidad registrada | tipo=un servicio | codigo=SER-ASE
+2026-11-19 23:36:54,791 | DEBUG | software_fj | Intento de registro finalizado | tipo=un servicio | total=3
+2026-11-19 23:36:54,792 | INFO | software_fj | Simulación válida aprobada | caso=Crear servicio de asesoría
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Simulación finalizada | caso=Crear servicio de asesoría
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,792 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-001
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=1
+2026-11-19 23:36:54,792 | INFO | software_fj | Reserva creada | reserva=RES-001 | total=288277.50
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-001 | total_reservas=1
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,792 | INFO | software_fj | Reserva confirmada | reserva=RES-001 | cliente=CLI-001 | total=288277.50
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-001 | estado=confirmada
+2026-11-19 23:36:54,792 | INFO | software_fj | Reserva procesada | reserva=RES-001
+2026-11-19 23:36:54,792 | INFO | software_fj | Simulación válida aprobada | caso=Completar reserva de sala
+2026-11-19 23:36:54,792 | DEBUG | software_fj | Simulación finalizada | caso=Completar reserva de sala
+2026-11-19 23:36:54,793 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,793 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,793 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,793 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,793 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,793 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,793 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-002 | cliente=CLI-001 | servicio=SER-SALA
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 183, in calcular_costo
+    self.validar_parametros(duracion_decimal, **parametros)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 224, in validar_parametros
+    raise ErrorReservaInvalida(
+        f"La sala admite máximo {self.capacidad} participantes."
+    )
+software_fj.excepciones.ErrorReservaInvalida: La sala admite máximo 12 participantes.
+2026-11-19 23:36:54,795 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-002 | total_reservas=1
+2026-11-19 23:36:54,795 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar reserva que supera la capacidad de la sala | error=ErrorReservaInvalida
+2026-11-19 23:36:54,795 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar reserva que supera la capacidad de la sala
+2026-11-19 23:36:54,795 | INFO | software_fj | Disponibilidad modificada | servicio=SER-EQP | disponible=False
+2026-11-19 23:36:54,795 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,795 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,795 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,795 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-003 | cliente=CLI-001 | servicio=SER-EQP
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 175, in calcular_costo
+    raise ErrorServicioNoDisponible(
+        f"El servicio {self.codigo} no está disponible."
+    )
+software_fj.excepciones.ErrorServicioNoDisponible: El servicio SER-EQP no está disponible.
+2026-11-19 23:36:54,796 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-003 | total_reservas=1
+2026-11-19 23:36:54,796 | INFO | software_fj | Simulación inválida controlada | caso=Controlar servicio no disponible | error=ErrorServicioNoDisponible
+2026-11-19 23:36:54,796 | DEBUG | software_fj | Simulación finalizada | caso=Controlar servicio no disponible
+2026-11-19 23:36:54,796 | INFO | software_fj | Disponibilidad modificada | servicio=SER-EQP | disponible=True
+2026-11-19 23:36:54,796 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,796 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,796 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,796 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,796 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,796 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,797 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-004
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=2
+2026-11-19 23:36:54,797 | INFO | software_fj | Reserva creada | reserva=RES-004 | total=528000.00
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-004 | total_reservas=2
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,797 | INFO | software_fj | Reserva confirmada | reserva=RES-004 | cliente=CLI-001 | total=528000.00
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-004 | estado=confirmada
+2026-11-19 23:36:54,797 | INFO | software_fj | Reserva procesada | reserva=RES-004
+2026-11-19 23:36:54,797 | INFO | software_fj | Simulación válida aprobada | caso=Completar alquiler de equipos
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Simulación finalizada | caso=Completar alquiler de equipos
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,797 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,797 | ERROR | software_fj | Creación de reserva rechazada | reserva=RES-005 | cliente=CLI-001 | servicio=SER-EQP
+Traceback (most recent call last):
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/gestor.py", line 94, in crear_reserva
+    reserva = Reserva(
+        codigo,
+    ...<5 lines>...
+        **parametros,
+    )
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 373, in __init__
+    self.total = servicio.calcular_costo(
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+        self.duracion,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **self.parametros,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 183, in calcular_costo
+    self.validar_parametros(duracion_decimal, **parametros)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/src/software_fj/modelos.py", line 264, in validar_parametros
+    raise ErrorReservaInvalida(
+        f"Solo hay {self.unidades_disponibles} unidades disponibles."
+    )
+software_fj.excepciones.ErrorReservaInvalida: Solo hay 5 unidades disponibles.
+2026-11-19 23:36:54,798 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-005 | total_reservas=2
+2026-11-19 23:36:54,798 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar alquiler por falta de unidades | error=ErrorReservaInvalida
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar alquiler por falta de unidades
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,799 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-006
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=3
+2026-11-19 23:36:54,799 | INFO | software_fj | Reserva creada | reserva=RES-006 | total=321300.00
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-006 | total_reservas=3
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,799 | INFO | software_fj | Reserva confirmada | reserva=RES-006 | cliente=CLI-001 | total=321300.00
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Intento de confirmación finalizado | reserva=RES-006 | estado=confirmada
+2026-11-19 23:36:54,799 | INFO | software_fj | Reserva procesada | reserva=RES-006
+2026-11-19 23:36:54,799 | INFO | software_fj | Simulación válida aprobada | caso=Completar asesoría con descuento e impuesto
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Simulación finalizada | caso=Completar asesoría con descuento e impuesto
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,799 | DEBUG | software_fj | Validación numérica finalizada | campo=La duración
+2026-11-19 23:36:54,800 | DEBUG | software_fj | Validación numérica finalizada | campo=El impuesto
+2026-11-19 23:36:54,800 | DEBUG | software_fj | Validación numérica finalizada | campo=El descuento
+2026-11-19 23:36:54,800 | INFO | software_fj | Entidad registrada | tipo=una reserva | codigo=RES-007
+2026-11-19 23:36:54,800 | DEBUG | software_fj | Intento de registro finalizado | tipo=una reserva | total=4
+2026-11-19 23:36:54,800 | INFO | software_fj | Reserva creada | reserva=RES-007 | total=150000.00
+2026-11-19 23:36:54,800 | DEBUG | software_fj | Creación de reserva finalizada | codigo=RES-007 | total_reservas=4
+2026-11-19 23:36:54,800 | INFO | software_fj | Reserva cancelada | reserva=RES-007
+2026-11-19 23:36:54,800 | INFO | software_fj | Simulación válida aprobada | caso=Cancelar una reserva pendiente
+2026-11-19 23:36:54,800 | DEBUG | software_fj | Simulación finalizada | caso=Cancelar una reserva pendiente
+2026-11-19 23:36:54,800 | INFO | software_fj | Simulación inválida controlada | caso=Rechazar procesamiento de una reserva cancelada | error=ErrorOperacionNoPermitida
+2026-11-19 23:36:54,800 | DEBUG | software_fj | Simulación finalizada | caso=Rechazar procesamiento de una reserva cancelada
+2026-11-19 23:36:54,800 | INFO | software_fj | Evidencia guardada | ruta=/home/alejandro-palacios/Documentos/Unad/PROGRAMACIÓN/Fase 4/unad-programacion-fase4-grupo-308/evidencias/resultados_simulaciones.json | aprobadas=15 | fallidas=0

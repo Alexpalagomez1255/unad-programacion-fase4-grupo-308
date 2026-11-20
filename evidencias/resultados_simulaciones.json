@@ -1,0 +1,114 @@
+{
+  "proyecto": "Sistema Integral de Gestión de Clientes, Servicios y Reservas",
+  "generado_en": "2026-11-19T23:36:54-05:00",
+  "total": 15,
+  "aprobadas": 15,
+  "fallidas": 0,
+  "resultados": [
+    {
+      "numero": 1,
+      "nombre": "Registrar cliente válido",
+      "tipo": "válida",
+      "aprobado": true,
+      "detalle": "Cliente CLI-001: Ana Torres (ana@example.com)"
+    },
+    {
+      "numero": 2,
+      "nombre": "Rechazar cliente con correo inválido",
+      "tipo": "inválida",
+      "aprobado": true,
+      "detalle": "ErrorValidacion: El correo del cliente no tiene un formato válido."
+    },
+    {
+      "numero": 3,
+      "nombre": "Rechazar cliente duplicado",
+      "tipo": "inválida",
+      "aprobado": true,
+      "detalle": "ErrorDuplicado: Ya existe un cliente con código CLI-001."
+    },
+    {
+      "numero": 4,
+      "nombre": "Crear servicio de sala",
+      "tipo": "válida",
+      "aprobado": true,
+      "detalle": "Sala Sala Ejecutiva: capacidad 12, COP 85000.00 por hora"
+    },
+    {
+      "numero": 5,
+      "nombre": "Crear servicio de alquiler de equipos",
+      "tipo": "válida",
+      "aprobado": true,
+      "detalle": "Equipo Portátil: 5 unidades, COP 120000.00 por día"
+    },
+    {
+      "numero": 6,
+      "nombre": "Rechazar servicio con tarifa negativa",
+      "tipo": "inválida",
+      "aprobado": true,
+      "detalle": "ErrorValidacion: El precio por hora debe ser mayor que cero."
+    },
+    {
+      "numero": 7,
+      "nombre": "Crear servicio de asesoría",
+      "tipo": "válida",
+      "aprobado": true,
+      "detalle": "Asesoría Arquitectura de software con Laura Gómez: COP 150000.00 por hora"
+    },
+    {
+      "numero": 8,
+      "nombre": "Completar reserva de sala",
+      "tipo": "válida",
+      "aprobado": true,
+      "detalle": "Reserva RES-001: Ana Torres, Sala Ejecutiva, estado procesada, total COP 288277.50"
+    },
+    {
+      "numero": 9,
+      "nombre": "Rechazar reserva que supera la capacidad de la sala",
+      "tipo": "inválida",
+      "aprobado": true,
+      "detalle": "ErrorReservaInvalida: La sala admite máximo 12 participantes."
+    },
+    {
+      "numero": 10,
+      "nombre": "Controlar servicio no disponible",
+      "tipo": "inválida",
+      "aprobado": true,
+      "detalle": "ErrorServicioNoDisponible: El servicio SER-EQP no está disponible."
+    },
+    {
+      "numero": 11,
+      "nombre": "Completar alquiler de equipos",
+      "tipo": "válida",
+      "aprobado": true,
+      "detalle": "Reserva RES-004: Ana Torres, Portátil, estado procesada, total COP 528000.00"
+    },
+    {
+      "numero": 12,
+      "nombre": "Rechazar alquiler por falta de unidades",
+      "tipo": "inválida",
+      "aprobado": true,
+      "detalle": "ErrorReservaInvalida: Solo hay 5 unidades disponibles."
+    },
+    {
+      "numero": 13,
+      "nombre": "Completar asesoría con descuento e impuesto",
+      "tipo": "válida",
+      "aprobado": true,
+      "detalle": "Reserva RES-006: Ana Torres, Arquitectura de software, estado procesada, total COP 321300.00"
+    },
+    {
+      "numero": 14,
+      "nombre": "Cancelar una reserva pendiente",
+      "tipo": "válida",
+      "aprobado": true,
+      "detalle": "Reserva RES-007: Ana Torres, Arquitectura de software, estado cancelada, total COP 150000.00"
+    },
+    {
+      "numero": 15,
+      "nombre": "Rechazar procesamiento de una reserva cancelada",
+      "tipo": "inválida",
+      "aprobado": true,
+      "detalle": "ErrorOperacionNoPermitida: Solo una reserva confirmada puede procesarse."
+    }
+  ]
+}
